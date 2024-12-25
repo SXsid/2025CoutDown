@@ -17,7 +17,7 @@ function App() {
   useEffect(()=>{
     const interval = setInterval(()=>{
       setTimeleft(calculateLeftTime())
-    },1000*60*60)
+    },1000)
     return ()=>clearInterval(interval)
   },[])
 
